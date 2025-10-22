@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>frans</title>
+  <style>
+    /* Global Styles */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f9f9f9;
+      color: #333;
+      line-height: 1.6;
+      padding: 20px;
+      animation: fadeIn 1s ease-in;
+    }
+
+    header {
+      background-color: #4a47a3;
+      color: white;
+      padding: 20px;
+      text-align: center;
+      border-radius: 8px;
+      animation: slideDown 1s ease-out;
+    }
+
+    nav ul {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      list-style: none;
+      margin-top: 10px;
+    }
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s ease;
+    }
+
+    nav a:hover {
+      color: #ffcc00;
+    }
+
+    main {
+      margin-top: 20px;
+      animation: fadeIn 1s ease-in;
+    }
+
+    section {
+      margin-bottom: 40px;
+      animation: fadeInUp 0.8s ease-out;
+    }
+
+    h2 {
+      color: #4a47a3;
+      border-bottom: 2px solid #ddd;
+      padding-bottom: 5px;
+      margin-bottom: 15px;
+    }
+
+    #about {
+      background-color: #ffffff;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(13, 1, 245, 0.1);
+      max-width: 700px;
+      margin: auto;
+    }
+
+    #about p {
+      display: flex;
+      flex-wrap: wrap;
+      margin-bottom: 10px;
+    }
+
+    #about strong {
+      min-width: 180px;
+      color: #1e06db;
+      font-weight: 600;
+    }
+
+    /* Contact Form */
+    #contact {
+      max-width: 600px;
+      margin: auto;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    input, textarea {
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      font-size: 1rem;
+      width: 100%;
+    }
+
+    button {
+      padding: 10px;
+      background-color: #f80b0b;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    button:hover {
+      background-color: #e70808;
+    }
+
+    footer {
+      text-align: center;
+      padding: 15px;
+      background-color: #e50101;
+      color: white;
+      border-radius: 8px;
+      margin-top: 40px;
+    }
+
+    /* Responsive Design */
+    @media (max-width: 600px) {
+      nav ul {
+        flex-direction: column;
+        gap: 10px;
+      }
+
+      #about p {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      #about strong {
+        padding-right: 0;
+        margin-bottom: 4px;
+      }
+    }
+
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>INI HEADER</h1>
+    <nav>
+      <ul>
+        <li><a href="#home">Beranda</a></li>
+        <li><a href="#about">Tentang</a></li>
+        <li><a href="#contact">Kontak</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="home">
+      <h2>welcome</h2>
+      <p>frans </p>
+    </section>
+
+    <section id="about">
+      <h2>Tentang frans</h2>
+      <p><strong>NIM:</strong>2511500017</p>
+      <p><strong>Nama:</strong>frans wijaya</p>
+      <p><strong>Tempat, Tanggal Lahir:</strong>limbung, 22-juni-2007</p>
+      <p><strong>Alamat:</strong>gandaria 1, gang.walett</p>
+      <p><strong>Hobi:</strong>mancing dan bermain bola</p>
+      <p><strong>Cita-cita:</strong>polisi</p>
+      <p><strong>Pasangan:</strong>jomblo pak</p>
+      <p><strong>nama orang tua:</strong>hamdan</p>
+    </section>
+
+    <section id="contact">
+      <h2>Kontak Kami</h2>
+      <form action="#">
+        <label for="txtnama">Nama:</label>
+        <input type="text" id="txtnama" name="txtname" placeholder="Masukkan nama" required autocomplete="name">
+
+        <label for="txtemail">Email:</label>
+        <input type="email" id="txtemail" name="txtemail" placeholder="Masukkan email" required autocomplete="email">
+
+        <label for="txtpesan">Pesan:</label>
+        <textarea id="txtpesan" name="txtpesan" rows="4" placeholder="Masukkan pesan" required></textarea>
+
+        <button type="submit">Kirim</button>
+        <button type="reset">Batal</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy;frans wijaya [2511500017]</p>
+  </footer>
+
+</body>
+</html>
